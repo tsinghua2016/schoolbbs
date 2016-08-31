@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="user" location="172,183" size="2858,385">
+    <action name="createImageAction" location="1990,58" size="150,40" />
+    <action name="userexit" location="2230,235" size="150,40" />
+    <action name="getnoticelist" location="2241,130" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="noticeList.jsp" />
+      </result>
+      <result name="over" />
+    </action>
+    <action name="notice" location="2415,129" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="notice.jsp" />
+      </result>
+      <result name="over">
+        <resourceEdge source="over" routing="0" target="notice.jsp" />
+      </result>
+    </action>
+    <action name="upload" location="2660,129" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="uploadok.jsp" />
+      </result>
+      <result name="fail">
+        <resourceEdge source="fail" routing="0" target="uploadfail.jsp" />
+      </result>
+    </action>
+    <action name="filelist" location="2660,234" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="filelist.jsp" />
+      </result>
+      <result name="fail">
+        <resourceEdge source="fail" routing="0" target="404.jsp" />
+      </result>
+    </action>
+    <action name="download" location="2415,244" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="forum" location="1985,130" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="forum.jsp" />
+      </result>
+      <result name="over">
+        <resourceEdge source="over" routing="0" target="forum.jsp" />
+      </result>
+    </action>
+    <action name="search" location="1985,252" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="search.jsp" />
+      </result>
+      <result name="over">
+        <resourceEdge source="over" routing="0" target="search.jsp" />
+      </result>
+    </action>
+    <action name="getsearch" location="1529,30" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="topicList.jsp" />
+      </result>
+      <result name="over" />
+    </action>
+    <action name="detail" location="65,246" size="150,83">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="detail.jsp" />
+      </result>
+      <result name="over">
+        <resourceEdge source="over" routing="0" target="detail.jsp" />
+      </result>
+      <result name="fail">
+        <resourceEdge source="fail" routing="0" target="404.jsp" />
+      </result>
+    </action>
+    <action name="msg" location="65,47" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="msgdetail.jsp" />
+      </result>
+      <result name="fail">
+        <resourceEdge source="fail" routing="0" target="index.jsp" />
+      </result>
+    </action>
+    <action name="chatreply" location="310,58" size="150,40" />
+    <action name="getmorereply" location="555,47" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="replylist.jsp" />
+      </result>
+      <result name="over" />
+    </action>
+    <action name="gettopiclist" location="800,47" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="topicList.jsp" />
+      </result>
+      <result name="over" />
+    </action>
+    <action name="index" location="1045,57" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="userdo" location="237,822" size="180,228">
+    <action name="addtopic" location="15,23" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="addreply" location="18,77" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="addtickling" location="19,131" size="150,41">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="check" location="243,747" size="460,71">
+    <action name="logincheck" location="15,23" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="registercheck" location="260,23" size="150,41">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="noticeList.jsp" path="/WEB-INF/static/noticeList.jsp" location="2475,79" size="150,55" />
+  <webResource name="notice.jsp" path="notice.jsp" location="2720,79" size="150,55" />
+  <webResource name="uploadok.jsp" path="uploadok.jsp" location="3105,79" size="150,55" />
+  <webResource name="uploadfail.jsp" path="uploadfail.jsp" location="3420,324" size="150,55" />
+  <webResource name="filelist.jsp" path="filelist.jsp" location="3105,604" size="150,55" />
+  <webResource name="404.jsp" path="/404/404.jsp" location="304,593" size="150,55" />
+  <webResource name="forum.jsp" path="forum.jsp" location="2090,79" size="150,55" />
+  <webResource name="search.jsp" path="search.jsp" location="1810,79" size="150,55" />
+  <webResource name="topicList.jsp" path="/WEB-INF/static/topicList.jsp" location="1530,9" size="150,55" />
+  <webResource name="detail.jsp" path="detail.jsp" location="25,429" size="150,55" />
+  <webResource name="msgdetail.jsp" path="msgdetail.jsp" location="305,79" size="150,55" />
+  <webResource name="index.jsp" path="/index.jsp" location="25,219" size="150,55" />
+  <webResource name="replylist.jsp" path="/WEB-INF/static/replylist.jsp" location="795,79" size="150,55" />
+  <webResource name="index.jsp" path="index.jsp" location="1285,79" size="150,55" />
+  <include file="admin.xml" location="865,827" size="150,30" />
+</Struts2Diagram>
+

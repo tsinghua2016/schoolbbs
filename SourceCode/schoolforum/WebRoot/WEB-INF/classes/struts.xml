@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+<package name="user" namespace="/" extends="struts-default">
+
+
+<interceptors>
+
+<interceptor name="countmsg" class="inter.Count"></interceptor>
+<interceptor-stack name="intestack">
+<interceptor-ref name="params"/>
+<interceptor-ref name="countmsg" />
+
+</interceptor-stack>
+</interceptors>
+<default-interceptor-ref name="intestack"/>
+	<action name="createImageAction" class="action.CreateImageAction"></action> 
+	<action name="userexit" class="userbase.Exit"></action>
+	<action name="getnoticelist" class="action.GetNotice">
+		<result name="success">/WEB-INF/static/noticeList.jsp</result>
+		<result name="over">/WEB-INF/static/over.txt</result>
+	</action>
+	<action name="notice" class="action.GetNotice">
+		<result name="success">notice.jsp</result>
+		<result name="over">notice.jsp</result>
+	</action>
+	<!-- 文件 -->
+    <action name="upload" class="action.Upload">
+       <interceptor-ref name="fileUpload">
+          <!-- 配置允许上传的文件大小 -->
+          <param name="maximumSize">4000000</param>
+         </interceptor-ref>
+        <interceptor-ref name="defaultStack"></interceptor-ref> 
+		<result name="success">uploadok.jsp</result>
+		<result name="fail">uploadfail.jsp</result>
+	</action>
+	
+	<action name="filelist" class="action.GetFileList">
+
+		<result name="success">filelist.jsp</result>
+		<result name="fail">/404/404.jsp</result>
+	</action>
+	
+	<action name="download"  class="action.Download" >
+	<result name="success" type="stream">
+		　　<param name="contentType">application/stream</param>
+		　　<param name="inputName">downloadFile</param>
+		  <param name="contentDisposition">attachment;fileName="${filename}"</param>  
+		 
+		　　<param name="bufferSize">4096</param>
+	</result>
+	</action>
+	
+	<action name="forum" class="action.GetTopic">
+		<result name="success">forum.jsp</result>
+		<result name="over">forum.jsp</result>
+	</action>
+	<action name="search" class="action.GetTopic" method="search">
+		<result name="success">search.jsp</result>
+		<result name="over">search.jsp</result>
+	</action>
+		<action name="getsearch" class="action.GetTopic" method="search">
+		<result name="success">/WEB-INF/static/topicList.jsp</result>
+		<result name="over">/WEB-INF/static/over.txt</result>
+	</action>
+	<action name="detail" class="action.GetReply">
+		<result name="success">detail.jsp</result>
+		<result name="over">detail.jsp</result>
+		<result name="fail">/404/404.jsp</result>
+	</action>
+	<action name="msg" class="action.Getchat">
+	
+		<result name="success">msgdetail.jsp</result>
+		<result name="fail">/index.jsp</result>
+	</action>
+	<action name="chatreply" class="action.ChatReply"></action>
+	<action name="getmorereply" class="action.GetReply">
+		<result name="success">/WEB-INF/static/replylist.jsp</result>
+		<result name="over">/WEB-INF/static/over.txt</result>
+	</action>
+	
+
+	<action name="gettopiclist" class="action.GetTopic">
+		<result name="success">/WEB-INF/static/topicList.jsp</result>
+		<result name="over">/WEB-INF/static/over.txt</result>
+	</action>
+	
+	<action name="index">
+		<result>index.jsp</result>
+	</action>
+	
+</package>
+<package name="userdo" namespace="/do" extends="json-default">
+
+	<action name="addtopic" class="action.AddTopic">
+			<result type="json">
+				<param name="noCache">true</param>
+				<param name="contentType">text/html</param>
+			</result>
+	</action>
+	
+		<action name="addreply" class="action.AddReply">
+			<result type="json">
+				<param name="noCache">true</param>
+				<param name="contentType">text/html</param>
+			</result>
+	</action>
+	
+		<action name="addtickling" class="action.AddTickling">
+			<result type="json">
+				<param name="noCache">true</param>
+				<param name="contentType">text/html</param>
+			</result>
+	</action>
+
+</package>
+
+<package name="check" namespace="/check" extends="json-default">
+
+	<action name="logincheck" class="userbase.Login">
+				<result type="json">
+				<param name="noCache">true</param>
+				<param name="contentType">text/html</param>
+			</result>
+	</action>
+	<action name="registercheck" class="userbase.Register">
+		<result type="json">
+			<param name="noCache">true</param>
+			<param name="contentType">text/html</param>
+		</result>
+	</action>
+
+</package>
+
+
+
+
+
+<include file="admin/admin.xml"></include>
+
+</struts>    

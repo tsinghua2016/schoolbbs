@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+div
+{
+	margin:80px auto;
+		clear:both;
+width:650px;
+}
+a
+{
+	text-decoration:none;
+	display:block;
+	float:left;
+	margin-top:-80px;
+
+}
+.image
+{
+	
+	height:380px;
+	
+
+}
+.back
+{
+		margin-left:186px;
+}
+.index
+{
+		margin-left:325px;;
+}

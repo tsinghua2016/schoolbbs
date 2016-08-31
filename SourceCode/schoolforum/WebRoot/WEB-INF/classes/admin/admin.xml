@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+   <struts>
+	<package name="admindo" namespace="/admin" extends="struts-default">
+		<interceptors>  
+			<interceptor name="authorityforadmin"   class="admin.inter.LoginInter"/>  
+		</interceptors>  
+		<global-results>
+			<result name="fail">/admin/login.jsp</result>
+		</global-results>
+
+		
+		<action name="admin">
+			<result name="success">/admin/admin.jsp</result>
+			<interceptor-ref name="authorityforadmin"/> 
+		</action> 
+		<action name="post" >
+			<result name="success">/admin/post.jsp</result>
+			<interceptor-ref name="authorityforadmin"/>
+		</action>
+	<action name="addnotice" class="admin.AddNotice"></action>
+	<action name="adminexit" class="admin.Exit"></action>	
+	<action name="gettickling" class="admin.GetTickling">
+		<result name="success">/admin/ticklinglist.jsp</result>
+		<result name="over">/WEB-INF/static/over.txt</result>
+	</action>		
+
+	</package>
+	<package name="adminlogin" namespace="/admin" extends="struts-default">
+		<action name="login" class="admin.Login">
+			<result name="success">/admin/admin.jsp</result>
+			<result name="fail">/admin/login.jsp</result>
+		</action>
+	</package>
+
+</struts>

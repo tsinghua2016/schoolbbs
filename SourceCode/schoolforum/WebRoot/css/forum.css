@@ -1,0 +1,283 @@
+.panel-primary > .tilte-list{
+    color:#000;
+	background-color:#F7F9FC;
+}
+
+.panel-primary >  .forum-name
+{
+		background-color:#57ADD5;
+		height:41px;	
+}
+.panel-primary >  .forum-name >.panel-title
+{
+		font-weight:bold;
+		font-size:18px;
+}
+.panel-primary ,.panel-primary > .panel-heading 
+{
+	border-color:#F0F0F0;
+
+}
+.navlist,.forummain
+{
+	margin-top:15px;
+}
+
+.forumlist
+{
+	
+	min-height:481px;
+}
+.reply,.titlelist
+{
+	vertical-align:middle;
+}
+.reply
+{
+    background: #b0c5d6 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    width: 38px;
+}
+
+.time
+{
+	text-align:right;
+	color:#2A3141;
+	display:block;
+	width:147px;
+	float:right;
+	margin-top:10px;
+	font-size:14px;
+
+}
+.tilte-list
+{
+	
+	clear:both;
+	height:50px;
+}
+.tilte-list a
+{
+	display:block;
+	color:#000;
+	width:500x;
+	display:block;
+	float:left;
+	margin-left:10px;
+
+}
+.tilte-list h1:hover:
+{
+	text-decoration: underline;
+}
+.more
+{
+	text-align:center;
+	display:block;
+	padding:6px 0px;
+	background-color:#f0f0f0;
+	
+}
+.more input
+{
+	background-color:#f0f0f0;
+}
+.forum-name h3
+{
+	display:block;
+	width:600px;
+	float:left;
+}
+
+ .btn-postmsg
+{
+	float:right;
+	width:100px;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	color:#FFF;
+	margin-top:-29px;
+	margin-right:-9px;
+	background-color:#0D76D9;
+}
+.btn-postmsg:link,
+.btn-postmsg:visited,
+.btn-postmsg:hover,
+.btn-postmsg:active,.question 
+.btn-postmsg:focus
+{
+	color:#FFF ;
+}
+.question
+{
+	width:450px;
+	margin-top:20%;
+	line-height:10px;
+	height:500px;
+}
+.question span
+{
+	margin-left:20px;
+	text-align:right;
+}
+#topictitle,.editdetail
+{
+	width:385px;
+	margin-left:40px;
+}
+.editdetail
+{
+	
+	padding:3px 12px;
+	height:150px;
+	 border-radius: 4px;
+	  background: #fff none repeat scroll 0 0;
+    cursor: text;
+    font-size: 16px;
+	 text-align: left;
+	   color: #222;
+    line-height: 1.7;
+	border: 1px solid #ccc;
+	overflow: auto;
+
+}
+.question .btn-post
+{
+	width:50px;
+	font-size:14px;
+	padding:6px 8px;
+	margin-right:55px;
+	margin-top:10px;
+}
+
+.question .modal-header
+{
+	height:50px;
+
+	background-color:#0D76D9;
+}
+.question .close
+{
+	color:#F00;
+	font-size:25px;
+}
+.question form
+{
+	margin-top:-20px;
+}
+.question .modal-title
+{
+	font-size:15px;
+	color:#FFF;
+}
+.question .close:link,.question .close:visited,
+.question .close:hover,.question .close:active,
+.question .close:focus
+{
+	color:#FFF;
+}
+
+/*reply */
+.replyedit
+{
+	margin-top:20px;
+		padding:3px 12px;
+	height:150px;
+	 border-radius: 4px;
+	  background: #fff none repeat scroll 0 0;
+    cursor: text;
+	 text-align: left;
+	   color: #222;
+    font-size: 16px;
+    line-height: 1.7;
+	border: 1px solid #ccc;
+	overflow: auto;
+	margin-bottom:20px;
+}
+.btn-reply
+{
+	width:100px;
+	font-size:14px;
+	padding:8px 8px;
+	margin-right:0px;
+	margin-top:0px;
+}
+.topic-user
+{
+	float:left;
+	color:#000;
+	padding:1px 12px;
+	font-size:16px;
+}
+
+.panel-primary >  .topic-name
+{
+	height:67px;
+	width:100%;
+	text-align:center;
+}
+.forum-name  .topic-title
+{
+	width:500px;
+}
+.topic-name div ,.topic-title
+{
+	margin-top:10px;
+}
+.panel-title .time
+{
+
+	width:auto;
+	margin:0px 0px;
+	text-align:left;
+}
+
+.reply-topicmsg
+{
+	height:auto;
+}
+.topic-time
+{
+	margin-top:-20px;
+	color:#FFF;
+	
+}
+.replyuser
+{
+	color:#57add5;
+}
+.replyuser .time
+{
+	font-size:13px;
+}
+#replyerrmsg
+{
+	margin-top:10px;
+	margin-bottom:-18px;
+}
+.reply-not-login
+{
+	margin-top:50px;
+	margin-right:43%;
+	
+}
+.show-detail
+{
+	    border-radius: 4px;
+	    border:solid 1px #f0f0f0;
+	    margin-bottom:20px;
+}
+
+
+/*‘ŸÃÌº”*/
+.mybtn{
+	width:50px;
+	padding:2px;
+}

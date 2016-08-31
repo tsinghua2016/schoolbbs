@@ -1,0 +1,139 @@
+.schoolpanel,.noticepanel,.forumpanel
+{
+	clear:both;
+}
+.schoolpanel
+{
+	padding-top:10px;
+	margin-top:-50px;
+	background-color: #57ADD5;
+	font-size: 18px;
+	color: #FFF;
+	line-height: 30px;
+	width:100%;
+	height:430px;
+}
+.schoolpanel .btn-style
+{
+	margin-left:679px;
+	margin-top:20px;
+}
+
+
+.school
+{
+	margin-left:233px;
+	margin-top:50px;
+}
+
+.schoolMsg
+{
+	margin-top:40px;
+}
+.school
+{
+
+	width:555px;
+	height:440px;
+}
+.schoolTitle,.noticeTitle,.forumTitle
+{
+	padding-top:30px;
+	font-size: 25px;
+	font-weight:bold;
+	line-height: 20px;
+	
+}
+
+.noticeTitle
+{
+
+width:100%;
+text-align:center;
+	padding-top:60px;
+}
+.notice
+{
+	width:100%;
+	height:440px;
+	margin:10px auto;
+}
+.noticeMsg
+{
+	margin-top:15px;
+	margin-bottom:20px;
+}
+
+.noticepanel .btn-style
+{
+	margin:0 0;
+}
+.noticepanel
+{
+	margin-top:50px;
+padding-top:25px;
+	background-color: #EEE;
+	font-size: 18px;
+	color: #333;
+	line-height: 2.7;
+	width:100%;
+	height:430px;
+text-align:center;
+}
+
+.notice .btn-style
+{
+	margin-top:20px;
+}
+
+
+
+.forumTitle
+{
+
+	width:100%;
+	padding-top:80px;
+	padding-bottom:15px;
+}
+.forum
+{
+	width:400px;;
+	height:700px;
+	float:right;
+	margin-right:150px;
+}
+.forumMsg
+{
+	margin-top:15px;
+	margin-bottom:20px;
+}
+
+.forumpanel .btn-style
+{
+	margin:0 0;
+}
+.forumpanel
+{
+	margin-top:50px;
+	padding-top:25px;
+	background-color:#5bb1d9;
+	font-size: 18px;
+	color: #FFF;
+	line-height: 2.7;
+	width:100%;
+	height:450px;
+	text-align:right;
+	
+}
+
+.forum .btn-style
+{
+	margin-top:20px;
+}
+.context
+{
+	width:100%
+	
+}
+
+

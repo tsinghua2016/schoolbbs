@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table name="topic" catalog="sshtest">
+		<column name="detail"></column>
+		<column name="uid"></column>
+	</table>
+	<table name="uploadfiles" catalog="schoolbbs"></table>
+</hibernate-reverse-engineering>

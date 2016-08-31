@@ -1,0 +1,381 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body
+{
+	background-color:#F6F6F6;
+	  font-size: 16px;
+}
+div{
+	word-wrap: break-word;
+}
+em
+{
+	color:red;
+}
+.navbar
+{
+padding-top:4px;
+padding-bottom:2px;	
+font-size:16px;
+}
+
+#searchinput
+{
+	margin:10px 10px;
+	padding:5px 5px;
+	background-color:#565656;
+	border:none;
+}
+.btn_search
+{
+	padding:15px 10px;
+	background-color:inherit;
+	color:#FFF;
+	border:none;
+}
+
+
+
+.form-msg
+{
+	height:40px;
+	padding:10px auto;
+	width:300px;
+	margin-left: auto;
+	margin-right:auto;
+	display:inline;
+	border-radius:0px;
+
+}
+.input-list
+{
+	line-height:2.4;
+}
+
+.modal-label
+{
+	margin-left: 52px;
+	padding-right: 25px;
+	font-size: 15px;
+}
+.sure
+{
+	margin-left:23px;
+	padding-right:24px;
+}
+.modal-other
+{
+	margin-top:12px;
+	margin-bottom:-20px;
+	margin-left: 107px;
+	padding-right: 29px;
+	font-size:12px; 
+	font-weight:normal;
+}
+.modal-three
+{
+	margin-left:37px;
+}
+.modal-dialog
+{
+	width:480px;
+}
+.form-code
+{
+	margin-left:-4px;
+	width:100px;
+	font-size:18px;
+}
+.image-change
+{
+	color:#06F;
+	font-size:12px;
+}
+.input-list img
+{
+	padding-right:10px;
+}
+.modal-header
+{
+	font-size:bold;
+	background-color: #F7F7F7;
+}
+.modal-style
+{
+	margin-top:35%;
+	border-radius:0px;
+}
+.modal-register
+{
+	margin-top:30%;
+}
+.btn-submit
+{
+	margin-top:20px;
+	height: 48px;
+	font-size: 16px;
+	font-weight: bold;
+	width: 350px; 
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #57ADD5;
+	color:#fff !important;
+	font-size:18px;
+	border-radius:0px;
+
+}
+/*主要内容*/
+.context
+{
+	min-height:560px;
+	width:1000px;
+	margin:0px auto;
+	padding:0px 0px;
+}
+
+.btn-style,.btn-style:visited
+{
+	position:relative;
+	color: #FFF;
+	background-color: #DD4814;
+	border-color: #DD4814;
+	padding: 14px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 6px;
+
+
+}
+.btn-style:hover,.btn-style:active
+{
+	color:#FFF;
+	background-color: #B73C11;
+	border-color: #B73C11;
+}
+
+
+
+footer
+{
+	clear:both;
+	margin-top:10px;
+	margin-bottom:-30px;
+	padding-top:39px;
+	padding-bottom:36px;
+	bottom:0px;
+	position:relative;
+	color: #999;
+	font-size:15px;
+	text-align:center;
+	width:100% !important;
+	background:#323A45;
+
+
+}
+footer a,.navbar-brand
+{
+	font-weight:bold;
+	
+}
+footer span
+{
+	margin-right:5%;
+}
+
+
+.navlist
+{
+	padding-top:30px;
+	border-radius:4px;
+	clear::both;
+	width:250px;
+	float:left;
+	min-height:552px;
+	background:#fff;
+	border-color:#666;
+	box-shadow: 2px 0 6px #666;
+	margin-left:25px;
+}
+.panel-heading >a
+{
+	font-size:18px;
+	display:block;
+	vertical-align:central;
+	color:#FFF;
+	
+}
+.navlist > .panel-heading
+{
+	background-color: #E55144;
+	border-color:#E55144;
+	border-radius:6px;
+	text-align:center;
+	margin-bottom:20px;
+}
+.navlist > .menu-name
+{
+	margin-top:-10px;
+	margin-bottom:35px;
+	background-color:#57ADD5;
+	font-weight:bold;
+	  color: #fff;
+    display: block;
+    font-size: 18px;
+	border:#57add5;
+	
+}
+.spinner {
+  margin: 80px auto;
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  font-size: 10px;
+}
+ 
+.spinner > div {
+  background-color: #67CF22;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+   
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+ 
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+ 
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+ 
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+ 
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+ 
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) } 
+  20% { -webkit-transform: scaleY(1.0) }
+}
+ 
+@keyframes stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+
+.ticklingtype .btn-postmsg
+{
+	float:right;
+	width:100px;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	color:#FFF;
+	margin-top:40px;
+	margin-right:54px;
+	background-color:#0D76D9;
+}
+.btn-tickling:link,.btn-tickling:visited,.btn-tickling:hover,
+.btn-tickling:active,.btn-tickling:focus
+{
+	color:#FFF ;
+}
+.ticklingtype
+{
+	width:450px;
+	margin-top:20%;
+	line-height:10px;
+	height:430px;
+}
+.ticklingtype span
+{
+	margin-left:20px;
+	text-align:right;
+}
+#topictitle,.editdetail
+{
+	width:385px;
+	margin-left:40px;
+	margin-bottom:10px;
+}
+.ticklingtype .editdetail
+{
+	padding:3px 12px;
+	height:150px;
+	 border-radius: 4px;
+	  background: #fff none repeat scroll 0 0;
+    cursor: text;
+    font-size: 13px;
+	 text-align: left;
+	   color: #222;
+    font-size: 18px;
+    line-height: 1.7;
+	border: 1px solid #ccc;
+	overflow: auto;
+
+}
+.btn-tickling
+{
+	width:50px;
+	font-size:14px;
+	padding:6px 8px;
+	margin-right:55px;
+	margin-top:10px;
+}
+
+.ticklingtype .modal-header
+{
+	height:50px;
+
+	background-color:#0D76D9;
+}
+.ticklingtype .close
+{
+	color:#F00;
+	font-size:25px;
+}
+
+.ticklingtype form
+{
+	margin-top:-14px;
+}
+.ticklingtype .modal-title
+{
+	font-size:15px;
+	color:#FFF;
+}
+.ticklingtype .close:link,.ticklingtype .close:visited,
+.ticklingtype .close:hover,.ticklingtype .close:active,
+.ticklingtype .close:focus
+{
+	color:#FFF;
+}
+
+
+.noticemain,.forummain
+{
+    width:700px;
+	min-height:552px;
+	float:left;
+	box-shadow: 2px 0 6px #666;
+	margin-left:20px;
+}

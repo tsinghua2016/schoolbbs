@@ -1,0 +1,67 @@
+.panel-primary > .tilte-list{
+    color:#000;
+	background-color:#F0F0F0;
+}
+
+.panel-primary >  .notice-name
+{
+		background-color:#57ADD5;
+	
+		
+}
+.panel-primary >  .notice-name >.panel-title
+{
+		font-weight:bold;
+		font-size:18px;
+}
+.panel-primary ,.panel-primary > .panel-heading 
+{
+	border-color:#F0F0F0;
+
+}
+.navlist,.noticemain
+{
+	margin-top:15px;
+}
+
+.notileMsg
+{
+	clear:both;
+	padding:0px 20px;
+	word-wrap:break-word;
+}
+.noticelist
+{
+	
+	min-height:500px;
+}
+
+.time
+{
+	text-align:right;
+	color:#2A3141;
+	display:block;
+
+}
+.tilte-list a
+{
+	display:block;
+	color:#000;
+
+}
+.tilte-list h1:hover:
+{
+	text-decoration: underline;
+}
+.more
+{
+	text-align:center;
+	display:block;
+	padding:6px 0px;
+	background-color:#f0f0f0;
+	
+}
+.noticelist .btn
+{
+	background-color:#f0f0f0;
+}

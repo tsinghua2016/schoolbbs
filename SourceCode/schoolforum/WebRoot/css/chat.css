@@ -1,0 +1,28 @@
+
+.panel-primary > .topic-name 
+{
+	    height: 41px;
+    text-align: left;
+     font-size: 18px;
+    font-weight: bold;
+}
+.btn-call
+{
+	width:70px;
+	color:#FFF !important;
+	background-color:#57add5;
+	font-size:15px;
+	float:right;
+	
+}
+.call_title
+{
+
+	width:70%;
+	
+}
+.btn-call,.call_title
+{
+	margin-top:10px;
+	height:36px;
+}
